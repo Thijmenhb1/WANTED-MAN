@@ -1,0 +1,35 @@
+@font-face {
+    font-family: AsusFont;
+    src: url("AsusFont.ttf");
+
+}
+
+.Jesse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.Asus {
+    font-family: AsusFont;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation:blinkingText 1.2s infinite, horizontal-shaking 0.5s infinite  ;
+
+}
+@keyframes blinkingText{
+    0%{     color: red;    }
+    49%{    color: blue; }
+    60%{    color: yellow; }
+    99%{    color:green;  }
+    100%{   color: purple;    }
+}
+@keyframes horizontal-shaking {
+    0% { transform: translateX(0) }
+    25% { transform: translateX(5px) }
+    50% { transform: translateX(-5px) }
+    75% { transform: translateX(5px) }
+    100% { transform: translateX(0) }
+}
